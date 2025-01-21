@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Reading Bar Follower",
+  "version": "1.0",
+  "description": "A customizable reading bar that follows cursor Y position",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+    input[type="range"] {
+      width: 150px;
+    }
+    input[type="color"] {
+      width: 50px;
+      height: 25px;
+    }
+    .preview {
+      height: 30px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: hidden;
+    }
+    .value-display {
+      min-width: 45px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="row">
+      <label>Enable Reading Bar</label>
+      <input type="checkbox" id="enabled" checked>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>Appearance</h3>
+    <div class="row">
+      <label>Bar Color</label>
+      <input type="color" id="barColor" value="#FFFF00">
+    </div>
+    <div class="row">
+      <label>Opacity</label>
+      <input type="range" id="opacity" min="0" max="100" value="10">
+      <span id="opacityValue" class="value-display">10%</span>
+    </div>
+    <div class="row">
+      <label>Height</label>
+      <input type="range" id="height" min="10" max="100" value="30">
+      <span id="heightValue" class="value-display">30px</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Behavior</h3>
+    <div class="row">
+      <label>Smooth Follow</label>
+      <input type="checkbox" id="smoothFollow" checked>
+    </div>
+    <div class="row">
+      <label>Follow Speed</label>
+      <input type="range" id="followSpeed" min="1" max="100" value="50">
+      <span id="speedValue" class="value-display">50%</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Preview</h3>
+    <div class="preview">
+      <div id="barPreview"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
