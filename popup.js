@@ -1,6 +1,6 @@
 const Settings = {
     defaults: {
-      enabled: true,
+      enabled: false,
       barColor: '#FFFF00',
       opacity: 10,
       height: 30,
