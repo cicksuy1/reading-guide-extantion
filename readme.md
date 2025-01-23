@@ -2,6 +2,15 @@
 
 A lightweight Chrome extension that adds a customizable reading bar overlay to webpages, enhancing focus and improving the reading experience.
 
+## Future Goals
+
+- **Chrome PDF Viewer Integration**: Expand the functionality to support the Chrome PDF viewer, helping users read and navigate through documents with the same customizable bar.
+- **Enhanced Accessibility Features**:
+  - Integrate with text-to-speech tools for a seamless reading experience.
+  - Add keyboard shortcuts for toggling visibility or adjusting settings.
+  - Introduce a "focus mode" that dims the rest of the screen to reduce distractions.
+
+
 ## Features
 
 - **Dynamic Reading Bar**: Follows your cursor's Y position to guide your reading.
@@ -13,13 +22,14 @@ A lightweight Chrome extension that adds a customizable reading bar overlay to w
 - **Toggle Visibility**: Easily enable or disable the reading bar.
 - **Responsive Design**: Adapts to window resizing and ensures seamless integration.
 
-## Installation
 
+## Installation
 1. Download or clone the repository.
 2. Open the Chrome browser and navigate to `chrome://extensions`.
 3. Enable **Developer Mode** (toggle in the top-right corner).
 4. Click **Load Unpacked** and select the extracted folder of this project.
 5. The extension is now ready to use!
+
 
 ## Usage
 
